@@ -39,9 +39,9 @@ Includes useful generic modules such as
 ### Mac & Linux
 
 To run Drupal7 we need to setup a development environment with optimaly a virtual server:
-> MySQL 
->(Apache2) or (Nginx+PHPFPM)
-> PHP
+* MySQL 
+* (Apache2) or (Nginx+PHPFPM)
+* PHP
 (Please google for more info if you don't have this environment with keywords such as "lamp stack") <br />
 
 * import database @ /sql/db.sql.gz 
