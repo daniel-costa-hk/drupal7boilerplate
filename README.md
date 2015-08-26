@@ -1,64 +1,55 @@
 # Drupal 7 Boilerplate 
-A generic Drupal 7 website with a full scaled cms, admin & frontend theme.
-Structured with slick clean page manager menu rewrite and ctools panels.
-Responsive theme
+A generic Drupal 7 website with a full scaled cms, admin & frontend theme. 
+* Structured with a page manager and panels interface.
+* Responsive multi language theme on the frontend and generic admin theme on the back.
+> Everything ready to get you running!
 
 # Tech Kit
 MySQL <br />
 PHP, Drupal 7<br />
 Jquery <br />
+SASS <br />
 
 # Description
-This is a simple template for a generic invitation page with an email input text. 
-An invitation mail will be sent to a user along with a confirmation link and a viral link to recommend the
-product to other friends through social media widgets (Facebook & Twitter).
-All data is stored in mongoDb with a simple friendly admin interface.
+Includes useful generic modules such as 
+* Entity Translation
+* Metatags
+* Jquery update
+* Webform
+* Services
+* Captcha
+* Features
+> Ever
 
 
 # Snapshots
 
 ### Frontpage
-
-http://invitationpage.url
-
-![alt tag](https://raw.github.com/daniel-costa-hk/invitationpage/master/public/images/snapshots/invitepage_frontpage.png)
-
+![alt tag](https://raw.github.com/daniel-costa-hk/drupal7boilerplate/master/snapshots/drupal7_frontpage.png)
 
 ### Admin
+##### Panels interface with all the great perks that comes with it.
+![alt tag](https://raw.github.com/daniel-costa-hk/drupal7boilerplate/master/snapshots/drupal7_frontcontent.png)
+##### Admin CMS with responsive theme good to go.
+![alt tag](https://raw.github.com/daniel-costa-hk/drupal7boilerplate/master/snapshots/drupal7_admin.png)
 
-http://invitationpage.url/registrations
-
-![alt tag](https://raw.github.com/daniel-costa-hk/invitationpage/master/public/images/snapshots/invitepage_admin.png)
-
-
-# Motivation
-An example of integrating traditional marketing viral pages with new techkits.
 
 # Installation
 
 ### Mac & Linux
 
-Install [Node.JS](https://nodejs.org/) <br />
-Install [Mongo.DB](https://www.mongodb.org/)
-* (sudo) mongod 
-* (sudo) node bin/preinstall.js
-* (sudo) npm install -g nodemon
-* nodemon app.js
-* navigate to localhost:3000  (listening on port 3000 by default)
+To run Drupal7 we need to setup a development environment with optimaly a virtual server:
+> MySQL 
+>(Apache2) or (Nginx+PHPFPM)
+> PHP
+(Please google for more info if you don't have this environment with keywords such as "lamp stack") <br />
 
-> You’re running! (If any issues, check the console for any errors.)
+* import database @ /sql/db.sql.gz 
+* change default/settings.php with your database and base_url settings.
+* (optionally) install drush
+* drush uli
+* Enjoy!
 
-> The application will create a user collection on Mongo DB. <br />
-> Configure the settings in lib/config/development.json & lib/config/production.json <br />
-> Setup the email account router to send the email (Google mail by default) <br />
->> Note: If you use your own account for testing purposes please read:
->> https://support.google.com/accounts/answer/6010255?hl=en
 
-### Windows
-Not really sure :_)
-
-# License
-
-GNU General Public License
 
 
