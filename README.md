@@ -22,8 +22,6 @@ Includes useful generic modules such as
 * Services
 * Captcha
 * Features
-> Ever
-
 
 # Snapshots
 
