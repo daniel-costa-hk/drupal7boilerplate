@@ -1,0 +1,56 @@
+/* ===============================
+
+  Mixins.
+  Define global mixins here.
+
+=================================*/
+
+/*=========================
+  Include colors conditionally
+==========================*/
+@mixin set-color($text, $text-hover:nil, $background:nil) {
+  color: $text;
+  a { color: $text; }
+
+  @if $text-hover != "nil" {
+    a:hover {
+      color: $text-hover;
+    }
+  }
+  @if $background != "nil" {
+    background-color: $background;
+  }
+}
+
+
+/*=========================
+  Include css transitions
+==========================*/
+@mixin transition-with-property($property, $transition-time:0.3s, $type:linear) {
+  -webkit-transition: $property $transition-time $type;
+  -moz-transition: $property $transition-time $type;
+  -o-transition: $property $transition-time $type;
+  -ms-transition: $property $transition-time $type;
+  transition: $property $transition-time $type;
+}
+
+
+/*=========================
+  Include a css3 triangle arrow
+==========================*/
+@mixin arrow-triangle($color:#669900, $size:6px, $top:0px, $left:0px, $rotate:0deg) {
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $size $size 0 $size;
+    border-color: $color transparent transparent transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: $top;
+    left: $left;
+    @include transform(rotate($rotate) skew(0deg));
+  }
+}
