@@ -1,8 +1,11 @@
 # Drupal 7 Boilerplate 
 A generic Drupal 7 website with a full scaled cms, admin & frontend theme. 
 * Structured with a page manager and panels interface.
-* Responsive multi language theme on the frontend and generic admin theme on the back.
-> Everything ready to get you running!
+* Responsive frontend theme 
+* Multi Language with entity translation
+* Features
+* Services for REST interface
+> Everything ready to get you running for a big multi user website.
 
 # Tech Kit
 MySQL <br />
@@ -42,7 +45,10 @@ To run Drupal7 we need to setup a development environment with optimaly a virtua
 * MySQL 
 * (Apache2) or (Nginx+PHPFPM)
 * PHP
-(Please google for more info if you don't have this environment with keywords such as "lamp stack") <br />
+
+<br />
+(Please google for more info if you don't have this environment with keywords such as "lamp stack")
+<br />
 
 * import database @ /sql/db.sql.gz 
 * change default/settings.php with your database and base_url settings.
